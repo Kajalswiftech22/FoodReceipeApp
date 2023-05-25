@@ -46,16 +46,16 @@ class SignUpViewController: UIViewController {
     @objc func didTapSignUpButton() {
         //create and present tab bar controller
         let rootVC = SignUpViewController()
-        let vc = HomeViewController()
+//        let vc = HomeViewController()
         let navVC = UINavigationController(rootViewController: rootVC)
         navVC.modalPresentationStyle = .fullScreen
         // present(navVC, animated: true)
-        self.navigationController?.pushViewController(vc, animated: true)
+//        self.navigationController?.pushViewController(vc, animated: true)
         
        let tabBarVC = UITabBarController()
        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
 
-       let vc1 = storyBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+       let vc1 = storyBoard.instantiateViewController(withIdentifier: "HomeNav")
        vc1.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 0)
        let vc2 = storyBoard.instantiateViewController(withIdentifier: "CategoryViewController") as! CategoryViewController
        vc2.tabBarItem = UITabBarItem(title: "Category", image: UIImage(systemName: "fork.knife"), tag: 0)
@@ -65,7 +65,9 @@ class SignUpViewController: UIViewController {
         vc4.tabBarItem = UITabBarItem(title: "Profile", image: UIImage(systemName: "person.fill"), tag: 0)
 
        tabBarVC.setViewControllers([vc1, vc2, vc3, vc4], animated: false)
-       self.navigationController?.pushViewController(tabBarVC, animated: true)
+//       self.navigationController?.pushViewController(tabBarVC, animated: true)
+        tabBarVC.modalPresentationStyle = .fullScreen
+        self.present(tabBarVC, animated: false, completion: nil)
         
     }
 }

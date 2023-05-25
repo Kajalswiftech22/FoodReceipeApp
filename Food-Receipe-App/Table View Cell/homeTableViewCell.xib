@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="homeTableViewCell" customModule="Food_Receipe_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Fo-Q4-veC" userLabel="shadow view">
+                    <rect key="frame" x="16" y="8" width="343" height="244"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tHC-Ap-fgf">
+                    <rect key="frame" x="16" y="8" width="343" height="244"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tHC-Ap-fgf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="7zT-uC-RFm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5Fo-Q4-veC" secondAttribute="bottom" constant="8" id="D3R-Pk-ljh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5Fo-Q4-veC" secondAttribute="trailing" constant="16" id="IXL-A3-eMx"/>
+                <constraint firstItem="tHC-Ap-fgf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="V0y-NB-8Oi"/>
+                <constraint firstItem="5Fo-Q4-veC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="X16-U5-kIX"/>
+                <constraint firstItem="5Fo-Q4-veC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="kPd-UZ-Dui"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="tHC-Ap-fgf" secondAttribute="bottom" constant="8" id="u69-fS-ntG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tHC-Ap-fgf" secondAttribute="trailing" constant="16" id="uNt-BW-Y6F"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="209.92366412213741" y="-156.33802816901408"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

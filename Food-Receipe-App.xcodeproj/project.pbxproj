@@ -28,6 +28,12 @@
 		99DC81312A1D0E1F0040B097 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC81302A1D0E1F0040B097 /* FavouriteViewController.swift */; };
 		99DC81342A1D76D40040B097 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC81332A1D76D40040B097 /* String + Extension.swift */; };
 		99DC81362A1D7AD70040B097 /* UIAlertController .swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC81352A1D7AD70040B097 /* UIAlertController .swift */; };
+		99DC81392A1F4AB80040B097 /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC81382A1F4AB80040B097 /* homeTableViewCell.swift */; };
+		99DC813B2A1F4AC60040B097 /* categoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC813A2A1F4AC60040B097 /* categoryTableViewCell.swift */; };
+		99DC813E2A1F4AD60040B097 /* favoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DC813C2A1F4AD60040B097 /* favoriteTableViewCell.swift */; };
+		99DC813F2A1F4AD60040B097 /* favoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99DC813D2A1F4AD60040B097 /* favoriteTableViewCell.xib */; };
+		99DC81412A1F5A3A0040B097 /* Tabs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DC81402A1F5A3A0040B097 /* Tabs.storyboard */; };
+		99DC81432A1F693D0040B097 /* homeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99DC81422A1F693D0040B097 /* homeTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +61,12 @@
 		99DC81302A1D0E1F0040B097 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
 		99DC81332A1D76D40040B097 /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
 		99DC81352A1D7AD70040B097 /* UIAlertController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController .swift"; sourceTree = "<group>"; };
+		99DC81382A1F4AB80040B097 /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
+		99DC813A2A1F4AC60040B097 /* categoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryTableViewCell.swift; sourceTree = "<group>"; };
+		99DC813C2A1F4AD60040B097 /* favoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteTableViewCell.swift; sourceTree = "<group>"; };
+		99DC813D2A1F4AD60040B097 /* favoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = favoriteTableViewCell.xib; sourceTree = "<group>"; };
+		99DC81402A1F5A3A0040B097 /* Tabs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabs.storyboard; sourceTree = "<group>"; };
+		99DC81422A1F693D0040B097 /* homeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = homeTableViewCell.xib; sourceTree = "<group>"; };
 		E658834E9329150F4E41F889 /* Pods-Food-Receipe-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Food-Receipe-App.release.xcconfig"; path = "Target Support Files/Pods-Food-Receipe-App/Pods-Food-Receipe-App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +120,7 @@
 		995401202A1A809900DF9109 /* Food-Receipe-App */ = {
 			isa = PBXGroup;
 			children = (
+				99DC81372A1F4A8C0040B097 /* Table View Cell */,
 				99DC81322A1D76AF0040B097 /* Extension */,
 				995401572A1BBD4200DF9109 /* Storyboard */,
 				9954013A2A1A99B900DF9109 /* Custom */,
@@ -168,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				995401272A1A809900DF9109 /* Main.storyboard */,
+				99DC81402A1F5A3A0040B097 /* Tabs.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -179,6 +193,18 @@
 				99DC81352A1D7AD70040B097 /* UIAlertController .swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		99DC81372A1F4A8C0040B097 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				99DC81382A1F4AB80040B097 /* homeTableViewCell.swift */,
+				99DC81422A1F693D0040B097 /* homeTableViewCell.xib */,
+				99DC813A2A1F4AC60040B097 /* categoryTableViewCell.swift */,
+				99DC813C2A1F4AD60040B097 /* favoriteTableViewCell.swift */,
+				99DC813D2A1F4AD60040B097 /* favoriteTableViewCell.xib */,
+			);
+			path = "Table View Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9954012E2A1A809A00DF9109 /* LaunchScreen.storyboard in Resources */,
+				99DC813F2A1F4AD60040B097 /* favoriteTableViewCell.xib in Resources */,
+				99DC81432A1F693D0040B097 /* homeTableViewCell.xib in Resources */,
+				99DC81412A1F5A3A0040B097 /* Tabs.storyboard in Resources */,
 				9954014A2A1BABD500DF9109 /* houseOrange.png in Resources */,
 				9954012B2A1A809A00DF9109 /* Assets.xcassets in Resources */,
 				995401292A1A809900DF9109 /* Main.storyboard in Resources */,
@@ -307,11 +336,14 @@
 				995401362A1A822000DF9109 /* CustomColor.swift in Sources */,
 				995401422A1B33C800DF9109 /* CustomTextField.swift in Sources */,
 				995401392A1A854B00DF9109 /* LoginSignupViewController.swift in Sources */,
+				99DC813E2A1F4AD60040B097 /* favoriteTableViewCell.swift in Sources */,
+				99DC813B2A1F4AC60040B097 /* categoryTableViewCell.swift in Sources */,
 				99DC81312A1D0E1F0040B097 /* FavouriteViewController.swift in Sources */,
 				99DC812D2A1D0E060040B097 /* HomeViewController.swift in Sources */,
 				995401242A1A809900DF9109 /* SceneDelegate.swift in Sources */,
 				995401522A1BB44E00DF9109 /* ProfileViewController.swift in Sources */,
 				9954013C2A1A99E400DF9109 /* CustomButton.swift in Sources */,
+				99DC81392A1F4AB80040B097 /* homeTableViewCell.swift in Sources */,
 				99DC81362A1D7AD70040B097 /* UIAlertController .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
