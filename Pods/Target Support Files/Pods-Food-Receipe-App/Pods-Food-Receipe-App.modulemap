@@ -1,0 +1,6 @@
+framework module Pods_Food_Receipe_App {
+  umbrella header "Pods-Food-Receipe-App-umbrella.h"
+
+  export *
+  module * { export * }
+}
